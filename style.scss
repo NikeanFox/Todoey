@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -5,26 +6,29 @@
 }
 
 body {
-    background: radial-gradient(rgb(223, 151, 43), rgb(197, 180, 28));
+    background: radial-gradient(#00A3FF, #00CAE5);
 }
 
 .container {
+    font-family: 'Titillium Web', sans-serif;
+    border: none;
     flex-direction: column;
     display: flex;
     min-height: 100vh;
     min-width: 100%;
-    justify-content: center;
-    align-items: center;
     .show-time {
         justify-self: center;
         align-self: flex-start;
     }
     .todo-wrapper {
+        padding-top: 5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         .quote {
+            font-weight: bold;
+            color: #384A4D;
             margin-bottom: 5rem;
             font-size: 4rem;
         }
@@ -34,6 +38,7 @@ body {
             width: 38rem;
             justify-content: center;
             .todo-box {
+                border: none;
                 transition: all ease 0.5s;
                 width: 100%;
                 height: 3rem;
@@ -42,8 +47,10 @@ body {
                 padding-left: 1rem;
             }
             .add-button {
+                height: 3rem;
+                border: none;
                 cursor: pointer;
-                background-color: sandybrown;
+                background-color: #FFC074;
                 border-radius: 0 50px 50px 0;
                 img {
                     width: 2.5rem;
@@ -53,9 +60,12 @@ body {
         }
     }
     .todo-list-wrapper {
+        align-items: center;
+        justify-content: center;
         display: flex;
         flex-direction: column;
         margin-top: 2rem;
+        margin-bottom: 5px;
         .todo-item {
             width: 45rem;
             display: flex;
@@ -67,17 +77,19 @@ body {
                 background-color: white;
                 text-decoration: none;
                 font-size: 2rem;
-                border: 1px solid black;
+                text-justify: auto;
+                border: none;
                 border-radius: 50px 0 0 50px;
                 width: 100%;
-                padding-top: 0.2rem;
                 padding-left: 1rem;
                 height: 3rem;
                 justify-content: center;
             }
             .check-button {
+                height: 3rem;
+                border: none;
                 cursor: pointer;
-                background-color: sandybrown;
+                background-color: #FFC074;
                 img {
                     pointer-events: none;
                     width: 2.5rem;
@@ -85,8 +97,10 @@ body {
                 }
             }
             .trash-button {
+                border: none;
+                height: 3rem;
                 cursor: pointer;
-                background-color: sandybrown;
+                background-color: #FFC074;
                 border-radius: 0 50px 50px 0;
                 img {
                     pointer-events: none;
